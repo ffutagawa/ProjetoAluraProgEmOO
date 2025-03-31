@@ -47,5 +47,7 @@ class Conta:
             self.saca(valor)
             destino.deposita(valor)
         return "Saldo origem: {} saldo destino: {}".format(self.__saldo, destino.__saldo)
+    
+    print("teste")...
         
         
