@@ -6,7 +6,7 @@ class Conta:
         self.__numero = numero
         self.__titular = titular
         self.__saldo = saldo
-        self.__limite = limite
+ #      self.__limite = limite
 
     @property
     def saldo(self):
@@ -23,6 +23,14 @@ class Conta:
     @limite.setter
     def limite(self, limite):
         self.__limite = limite
+
+    @staticmethod
+    def codigo_banco():
+        return "001"
+    
+    @staticmethod
+    def codigos_bancos():
+        return {'BB': '001', 'Caixa': '104', 'Bradesco':'237'}
 
     def extrato(self):
         print("Saldo {} do titular {}".format(self.__saldo, self.__titular))
@@ -48,6 +56,7 @@ class Conta:
             destino.deposita(valor)
         return "Saldo origem: {} saldo destino: {}".format(self.__saldo, destino.__saldo)
     
-    print("teste")...
+
+    print("teste")
         
         
