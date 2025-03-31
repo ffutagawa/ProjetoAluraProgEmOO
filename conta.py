@@ -27,7 +27,7 @@ class Conta:
     def extrato(self):
         print("Saldo {} do titular {}".format(self.__saldo, self.__titular))
 
-    def deposita(self, valor):
+    def deposita(self, valor): 
         self.__saldo += valor
 
     def __pode_sacar(self, valor_a_sacar):
